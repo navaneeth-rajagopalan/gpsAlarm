@@ -1,0 +1,13 @@
+<script src="map/MapSvc.js"></script>
+<script src="map/MapControlsPositionSvc.js"></script>
+<script src="map/MapController.js"></script>
+<section ng-controller="mapCtrl">
+    <form id="searchLocationForm" name="searchForm" novalidate ng-submit="search()" formAutofillFix>
+        <div class="input-group">
+            <input name="place" type="search" class="controls" id="pac-input" ng-model="searchPlace" placeholder="Enter a location to search" required autofocus />            
+        </div>
+    </form>
+    <div id="map" style="width: 100%">
+
+    </div>
+</section>  
